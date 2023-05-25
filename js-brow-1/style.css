@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+
+body label{
+    margin-top: 10px;
+}
+
+
+body button{
+    border: none;
+    border-top: 1px solid black;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+body button:hover{
+    border-top: none;
+    border-bottom: 1px solid black;
+}
+
+
+/*Bonus*/
+
+.btn{
+    position: relative;
+    bottom: 20px;
+}
+
+
+.respuesta{
+    color: red;
+}

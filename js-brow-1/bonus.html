@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bonus palíndromo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <label for="texto">Palíndromos:</label>
+    <input type="text" id="texto" />
+    <p id="resultado"></p>
+    <button class="btn">Verificar</button>
+    <script>
+      const input = document.querySelector("#texto");
+      const resultado = document.querySelector("#resultado");
+      const boton = document.querySelector(".btn");
+      const cuerpo = document.querySelector("body");
+      boton.addEventListener("click", function () {
+        const texto = input.value;
+        // resultado.textContent = texto;
+        const textoTwo = texto
+          .split("")
+          .reverse()
+          .toString()
+          .replaceAll(",", "");
+        if (texto === textoTwo) {
+          const pa = document.createElement("p");
+          pa.classList.add("respuesta");
+          cuerpo.appendChild(pa).textContent = `${texto} es palíndromo `;
+        } else {
+          const pa = document.createElement("p");
+          pa.classList.add("respuesta");
+          cuerpo.appendChild(pa).textContent = `${texto} no  es un palíndromo`;
+        }
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>
