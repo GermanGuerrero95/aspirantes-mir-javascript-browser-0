@@ -1,0 +1,25 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+form label{
+    text-align: center;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 200px;
+}
+
+
+.text-decoration{
+   
+ 
+    text-align: center;
+    color: brown;
+    border-bottom: 0.5px solid black;
+}
