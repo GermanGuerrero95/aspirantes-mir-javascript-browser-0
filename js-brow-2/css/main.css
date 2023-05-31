@@ -1,8 +1,155 @@
+/*Variables*/
+:root {
+    --blanco: #FFF;
+    --negro: #111111;
+    --gris: #343A40;  
+    --grisClaro: #dae5ef;
+    --azulClaro:#78e3ee;
+}
+
+/*Globales*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+ 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 ul{
     list-style: none;
 }
 
+/* input[type="checkbox"]{
+    border: 0.01rem solid var(--azulClaro);
+} */
+
+/*Utilidades*/
 
 .is-completed{
     text-decoration: line-through;
+    
+}
+
+.contenedor{
+    max-width: 35rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.input-style{
+    border: 0.01rem solid var(--azulClaro);
+	width: 1.5rem;
+	height: 1.5rem;
+} 
+
+.input-style:focus{
+    outline: max(0.02rem, 0.15em) solid var(--azulClaro);
+}
+
+
+/*Form*/
+
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem; 
+    
+}
+
+
+.form__input{
+    padding: 0.5rem;
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+    width: 100%;
+    border: none;
+    background-color: var(--blanco);
+}
+
+.form__input::placeholder{
+    color:rgb(32, 34, 34);
+    font-style: italic;
+    
+}
+
+.form__input:focus{
+   background-color: var(--grisClaro);
+   outline: none;
+}
+
+.form__btn{
+    position: relative;
+    right:  6.5rem;
+    top: 1.4rem;
+    height: 65%;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(213, 157, 157);
+    cursor: pointer;
+    color: var(--blanco);
+    padding: 0.2rem;
+    transition: all 0.8s;
+}
+
+.form__btn:hover{
+    background-color: rgb(190, 47, 47);
+}
+
+
+/*taskList*/
+
+.items{
+
+    background-color: var(--blanco);
+    align-items: center;
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: start
+}
+
+
+
+
+.ul__item{
+    border-bottom: 0.1rem solid var(--grisClaro);
+    display: flex;
+    background-color: white;
+    margin: 1rem;
+    position: relative;
+    top: -2.5rem;
+    left: 1rem;
+    width: 25rem;
+}
+
+
+
+
+/*Delete btn*/
+
+
+.delete{
+    display: flex;
+    justify-content: center;
+    background-color: var(--blanco);
+}
+
+
+.delete__btn{
+        background-color: var(--azulClaro);
+        color: var(--blanco);
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-bottom: 4rem;
+        cursor: pointer;
+        transition: all 0.7s;
+        justify-content: center;
+}
+
+.delete__btn:hover{
+    background-color: #32777e;;
 }

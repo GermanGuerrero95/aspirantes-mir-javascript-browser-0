@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <form class="form" id="form">
-      <input class="form__input" placeholder="Add a new task" required />
+    <form class="form contenedor" id="form">
+      <input
+        class="form__input"
+        placeholder="Ingresa tu nueva tarea"
+        required
+      />
       <button class="form__btn" type="submit">Add</button>
     </form>
-    <div class="items">
-      <ul id="list" class="items__ul"></ul>
+    <div class="items contenedor">
+      <ul id="list" class=""></ul>
     </div>
-
-    <button class="btndelete" type="button">Delete all done</button>
-
+    <div class="delete contenedor">
+      <button class="delete__btn" type="button">Delete all done</button>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
